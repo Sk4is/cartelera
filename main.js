@@ -21,7 +21,7 @@ fetchMoviesJson().then(movies => {
         let synopsis = movies.documentaries[index].synopsis;
 
         moviesSection.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card"">
             <img src="${poster}" class="card-img-top" alt="documentary poster">
             <div class="card-body">
             <h5 class="card-title">${title}</h5>
