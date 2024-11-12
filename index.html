@@ -18,35 +18,120 @@
     <title>Cartelera</title>
   </head>
   <body>
-    <div class="page">
-    <header class="mainHeader mb-5">
-      <div class="siteIdentity">
-        <img
-          id="cinemaLogo"
-          src="./images/cinemalogo.png"
-          alt="cinema logo"
-          class="img-fluid"
-        />
-        <h1 id="billboard">Cartelera CINEMA HD</h1>
-      </div>
-    </header>
-
-    <main class="container mb-5">
-      <div class="d-flex justify-content-center">
-        <div id="movieSection" class="cardDocumentaries"></div>
-      </div>
-    </main>
-
-    <footer class="mainFooter p-4 mt-4">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p class="footerInfo mb-0">&copy; Copyright 2024</p>
-        <div class="footerSocialMedia">
-          <a href="https://github.com/Sk4is/cartelera/tree/main" target="_blank"
-            ><img id="githubLogo" src="./images/githubLogo.png" alt="Github logo"/></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:3000/index.html"
+          >Cinema HD</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button id="aboutUsButton" class="nav-link">About us</button>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <div class="page">
+      <header class="mainHeader mb-5">
+        <div class="siteIdentity">
+          <img
+            id="cinemaLogo"
+            src="./images/cinemalogo.png"
+            alt="cinema logo"
+            class="img-fluid"
+          />
+          <h1 id="billboard">Cartelera CINEMA HD</h1>
+        </div>
+      </header>
+
+      <main class="container mb-5">
+        <div id="movieDetails" class="movie-details d-none">
+          <button id="backButton" class="btn btn-secondary mb-3">Back</button>
+          <div id="detailsContent" class="text-white"></div>
+        </div>
+
+        <div id="movieSection" class="d-flex justify-content-center">
+          <div id="movieSectionCards" class="cardMovies"></div>
+        </div>
+
+        <div id="aboutUsSection" class="about-us-section d-none">
+          <h2>About Us</h2>
+          <p>
+            At <strong>Cinema HD</strong>, we are passionate about bringing the
+            magic of movies to life. Our platform is designed to provide the
+            best cinematic experience, showcasing a carefully curated selection
+            of films from around the world. Whether you're a fan of
+            action-packed blockbusters, heartwarming dramas, or
+            thought-provoking documentaries, we strive to offer something for
+            everyone.
+          </p>
+          <p>
+            <strong>Our Mission:</strong> Our mission is to create a space where
+            movie lovers can discover new films, share their passion for cinema,
+            and dive into an immersive world of entertainment. We believe that
+            films are more than just entertainment; they are a gateway to
+            different cultures, ideas, and emotions. Every movie we feature is
+            handpicked to ensure high quality and a memorable experience for our
+            viewers.
+          </p>
+          <div class="screenshots">
+            <p><strong>Why Choose Us?</strong></p>
+            <ul>
+              <li>
+                Wide Selection of Movies <br /><img
+                  src="./images/photo1.jpg"
+                  alt="Wide Selection of Movies"
+                />
+              </li>
+              <li>
+                Great details about each movie <br /><img
+                  src="./images/photo2.jpg"
+                  alt="Details about Movies"
+                />
+              </li>
+              <li>
+                Premium cinema rooms to enjoy any film <br /><img
+                  src="./images/photo3.jpg"
+                  alt="Premium Cinema Rooms"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mainFooter p-4 mt-4">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <p class="footerInfo mb-0">&copy; Copyright 2024</p>
+          <div class="footerSocialMedia">
+            <a
+              href="https://github.com/Sk4is/cartelera/tree/main"
+              target="_blank"
+              ><img
+                id="githubLogo"
+                src="./images/githubLogo.png"
+                alt="Github logo"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
-    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
