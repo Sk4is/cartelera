@@ -118,6 +118,7 @@ h1 {
 
 .movie-details img {
   width: 100%;
+  border-radius: 2%;
   height: auto;
 }
 
