@@ -44,10 +44,10 @@ fetchMoviesJson().then((movies) => {
     detailsContent.innerHTML = `
       <img src="${movie.poster}" alt="${movie.title} poster" class="img-fluid mb-3">
       <h2>${movie.title} (${movie.year})</h2>
-      <p><strong>Duración:</strong> ${movie.length}</p>
+      <p><strong>Duration:</strong> ${movie.length}</p>
       <p><strong>Director:</strong> ${movie.director}</p>
-      <p><strong>Sinopsis:</strong> ${movie.synopsis}</p>
-      <p><strong>Información Adicional:</strong> ${movie.details}</p>
+      <p><strong>Synopsis:</strong> ${movie.synopsis}</p>
+      <p><strong>Aditional information:</strong> ${movie.details}</p>
     `;
   }
 
